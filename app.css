@@ -22,7 +22,7 @@ main {
 main {
   margin: auto 0;
   overflow: hidden;
-  border-radius: 7px;
+  border-radius: 8px;
   background-color: hsl(0, 0%, 100%);
 }
 
@@ -62,20 +62,59 @@ main {
   .price__discount {
     padding: 0 0.65em 0 0;
   }
-
-  .price__full {
-  }
 }
 @media (min-width: 1000px) {
   .img__mob {
     display: none;
+  }
+  .img__desk {
+    display: flex;
+    width: 100%;
+    height: 100%;
+  }
+
+  main {
+    max-width: 35em;
+    height: 26em;
+    flex-direction: row;
+  }
+
+  section {
+    display: flex;
+    flex-direction: column;
+    padding: 1.8em;
+    width: 100%%;
+    height: 100%;
+  }
+
+  .title__top {
+    display: flex;
+
+    padding: 0;
+  }
+
+  h1 {
+    padding: 0.6em 2em 0 0;
+    line-height: 1;
+  }
+  p {
+    padding: 1.6em 0 0 0;
+    line-height: 1.5;
+  }
+
+  .price {
+    padding: 2em 0;
+  }
+
+  .price__discount {
+    padding: 0 0.65em 0 0;
   }
 }
 
 .title__top {
   text-transform: uppercase;
   color: hsl(228, 12%, 48%);
-  font-size: 11px;
+  font-size: 12px;
 }
 
 h1 {
@@ -107,6 +146,7 @@ p {
   text-decoration: underline;
   text-underline-offset: -37.5%;
   text-decoration-skip-ink: none;
+  text-decoration-color: hsl(223, 4%, 65%);
   font-size: 12px;
   display: flex;
   justify-content: center;
